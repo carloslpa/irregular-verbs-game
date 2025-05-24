@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Irregular Verb Challenge (A2)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 The Irregular Verb Challenge (A2) 🚀</h1>
+        <div id="game-intro">
+            <p>¡Bienvenido/a al Desafío de Verbos Irregulares A2! Pondremos a prueba tu conocimiento de los 30 verbos más comunes. ¡Prepara tus conocimientos y a escribir!</p>
+            <p>Responde correctamente para sumar puntos. ¡Buena suerte!</p>
+            <button id="start-button">¡Empezar Juego!</button>
+        </div>
+
+        <div id="game-area" class="hidden">
+            <p class="score-display">Puntuación: <span id="score">0</span> / <span id="max-questions-display">10</span></p>
+            <p class="question-count">Pregunta <span id="current-question-num">1</span> de <span id="max-questions-q-display">10</span></p>
+            <div class="question-card">
+                <p id="question-text"></p>
+                <input type="text" id="answer-input" placeholder="Escribe tu respuesta aquí..." autocomplete="off">
+                <button id="submit-button">Responder</button>
+            </div>
+            <p id="feedback-text"></p>
+            <button id="next-button" class="hidden">Siguiente Pregunta</button>
+        </div>
+
+        <div id="game-over" class="hidden">
+            <h2>¡Juego Terminado!</h2>
+            <p>Has completado el desafío.</p>
+            <p>Tu puntuación final es: <span id="final-score">0</span> de <span id="final-max-questions">10</span></p>
+            <p id="final-message"></p>
+            <button id="restart-button">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

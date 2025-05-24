@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f2f7; /* Light blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff; /* Blue header */
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+button {
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-top: 20px;
+    border: 2px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.score-display, .question-count {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+.question-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 25px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#question-text {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 20px;
+    min-height: 50px; /* Ensures space even for short questions */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#feedback-text {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    min-height: 30px; /* Prevents layout shifting */
+}
+
+#feedback-text.correct {
+    color: #28a745; /* Green for correct */
+}
+
+#feedback-text.incorrect {
+    color: #dc3545; /* Red for incorrect */
+}
+
+#game-over h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#game-over p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
